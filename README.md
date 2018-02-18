@@ -16,6 +16,6 @@ Press any key to get started, you have 15 attempts to guess letters
 
 You need to type all the letters of crypto
 
-#Lose
+# Lose
 
 If you are out of attempts to guest the word
