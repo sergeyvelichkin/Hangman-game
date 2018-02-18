@@ -92,7 +92,15 @@ window.onload = function (event) {
                 badGuesses.push(keyPressed);
                 document.getElementById("guessedLetters").textContent = badGuesses.join(",");
                 document.getElementById("numOfguess").textContent = parseInt(document.getElementById("numOfguess").textContent) - 1;
-
+                if (document.getElementById("numOfguess").textContent ==0){
+                    alert("You are loser!")
+                    badGuesses = [];
+                    document.getElementById("guessedLetters").textContent = badGuesses.join(",");
+                    document.getElementById("numOfguess").textContent = 15;
+                    randObj = randomWord[Math.floor(Math.random() * randomWord.length)];
+                    word = randObj.name;
+                    document.getElementById("currentWord").textContent = makeSlash(word);
+                }
             }
         }
     }
